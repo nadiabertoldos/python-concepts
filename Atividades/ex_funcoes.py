@@ -1,6 +1,5 @@
 #------Soma de três argumentos------
 #Faça um programa com uma função que necessite de três argumentos e que forneça a soma desses três argumentos.
-'''
 def soma(a,b,c):
     calculo = a + b + c
     print('A soma dos valores é: ', calculo)
@@ -10,10 +9,9 @@ b = int(input('Digite o segundo valor: '))
 c = int(input('Digite o terceiro valor: '))
 
 soma(a,b,c)
-'''
+
 #------Reverso do número------
 #Crie uma função que retorne o reverso de um número inteiro informado. Exemplo: Entrada - 127 → Saída - 721
-'''
 def reverso(num):
     num = str(num) #transformando a variável do tipo int em string, pois o slicing só funciona em variáveis do tipo string
     num = num[::-1] 
@@ -22,11 +20,10 @@ def reverso(num):
 num = int(input('Digite um valor inteiro: '))
 
 reverso(num)
-'''
+
 #------Conversão de temperatura------
 #Escreva um script que pergunte ao usuário se ele deseja converter uma temperatura de graus Celsius para Fahrenheit ou vice-versa. Para cada opção, crie uma função.
 #Plus: Crie uma terceira função que funcione como um menu para o usuário escolher a opção desejada. O menu deve chamar a função de conversão correta.
-'''
 def celsius(temp):
     calculo = (temp * 1.8) + 32
     print(f'Temperatura em Celsius: {calculo:.2f}')
@@ -54,7 +51,7 @@ def menu():
             print('Entrada inválida. Por favor, insira um número.')
 
 menu()
-'''
+
 #------Conversão de moedas------
 #Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e calcule quanto poderia comprar de cada moeda estrangeira. Considere a tabela de conversão abaixo:
 #- Dólar Americano: R$ 4,91
@@ -64,7 +61,6 @@ menu()
 #- Franco Suíço: R$ 0,42
 #- Euro: R$ 5,36
 #- Libra Esterlina: R$ 6,21
-'''
 def moedas(saldo):
     taxas = {}
     taxas = {
@@ -86,10 +82,9 @@ def moedas(saldo):
 saldo = float(input('Informe seu saldo na carteira: '))
 
 moedas(saldo)
-'''
+
 #------Contador de vogais------
 #Crie uma função chamada contar_vogais que recebe uma string como parâmetro. Implemente a lógica para contar o número de vogais na string e retorne o total de vogais. Solicite ao usuário que insira uma frase e utilize a função para contar as vogais.
-'''
 def contar_vogais(string):
     qtd = 0
     vogais = 'aeiou'
@@ -102,7 +97,7 @@ def contar_vogais(string):
 
 string = str(input('Digite algo: '))
 contar_vogais(string)
-'''
+
 #------Jogo da forca------
 #Vamos construir um jogo da forca!
 #- O programa escolherá aleatoriamente uma palavra secreta de uma lista predefinida.
